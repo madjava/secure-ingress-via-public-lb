@@ -7,7 +7,7 @@ This repo contains the terraform code for provisioning the resources described i
 
 ## Where to find the blog post
 
-The blog post cab be found here [xxx](https://madjava.github.io/blogs/projects/secure-ingress-via-public-lb/)
+The blog post cab be found in the [Secure Ingress via Azure Loadbalancer and Palo Alto Firewall](https://madjava.github.io/blogs/projects/secure-ingress-via-public-lb/) blog project post.
 
 ## Building out the Infrastructure
 

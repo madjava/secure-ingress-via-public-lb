@@ -7,7 +7,7 @@ This repo contains the terraform code for provisioning the resources described i
 
 ## Where to find the blog post
 
-The blog post cab be found here [xxx](https://xxx)
+The blog post cab be found here [xxx](https://madjava.github.io/blogs/projects/secure-ingress-via-public-lb/)
 
 ## Building out the Infrastructure
 

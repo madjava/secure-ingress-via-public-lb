@@ -28,26 +28,27 @@ terraform {
   }
 }
 
-# # az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan byol --subscription MySubscription
-# resource "azurerm_marketplace_agreement" "vm-series" {
-#   publisher = "paloaltonetworks"
-#   offer     = "vmseries-flex"
-#   plan      = "byol"
-# }
+# # Accept marketplace terms for Palo Alto VM-Series images. Comment out if already accepted.
+# az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan byol --subscription MySubscription
+resource "azurerm_marketplace_agreement" "vm-series" {
+  publisher = "paloaltonetworks"
+  offer     = "vmseries-flex"
+  plan      = "byol"
+}
 
-# # az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan bundle1 --subscription MySubscription
-# resource "azurerm_marketplace_agreement" "vm-series-bundle2" {
-#   publisher = "paloaltonetworks"
-#   offer     = "vmseries-flex"
-#   plan      = "bundle2"
-# }
+# az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan bundle1 --subscription MySubscription
+resource "azurerm_marketplace_agreement" "vm-series-bundle2" {
+  publisher = "paloaltonetworks"
+  offer     = "vmseries-flex"
+  plan      = "bundle2"
+}
 
-# # az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan bundle2 --subscription MySubscription
-# resource "azurerm_marketplace_agreement" "vm-series-bundle3" {
-#   publisher = "paloaltonetworks"
-#   offer     = "vmseries-flex"
-#   plan      = "bundle3"
-# }
+# az vm image terms accept --publisher paloaltonetworks --offer vmseries-flex --plan bundle2 --subscription MySubscription
+resource "azurerm_marketplace_agreement" "vm-series-bundle3" {
+  publisher = "paloaltonetworks"
+  offer     = "vmseries-flex"
+  plan      = "bundle3"
+}
 
 # Create a random password
 resource "random_password" "password" {
